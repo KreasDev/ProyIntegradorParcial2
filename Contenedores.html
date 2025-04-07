@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parcial 2 | Contenedores</title>
+  <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/container.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./imgs/logo.png" alt="Logo Web" class="image-fluid" style="height: 40px;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID" aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarID">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="WebAPIs.html">Web APIs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Microservicios.html">Microservicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="DesarrolloAPI.html">Desarrollo API</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Contenedores.html">Contenedores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Nube.html">Desarrollo de aplicaciones para la nube</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="container-custom">
+            <div class="card mb-4 shadow rounded-4">
+                <div class="card-body">
+                  <h3 class="card-title py-3">Manejo de Contenedores</h3>
+                  <p class="card-text py-2">El uso de contenedores ha transformado la forma en que se desarrollan, prueban y despliegan aplicaciones. Un contenedor encapsula una aplicación junto con todas sus dependencias, configuraciones y librerías necesarias para su ejecución, garantizando que se ejecute de la misma forma en cualquier entorno.
+                    <br><br>
+                    Docker es la herramienta más popular en este ámbito. Con un simple archivo <span class="badge text-bg-secondary">Dockerfile</span> , los desarrolladores pueden definir el entorno exacto de su aplicación, construir una imagen y ejecutarla como un contenedor. Estas imágenes son portables, ligeras y rápidas de iniciar, lo que facilita la integración continua (CI) y la entrega continua (CD).
+                    <br><br>
+                    Cuando una aplicación consta de múltiples componentes (API, base de datos, frontend), se puede usar Docker Compose para definir y ejecutar todos los contenedores necesarios con un solo comando.
+                    <br><br>
+                    Para proyectos más grandes, se utilizan herramientas de orquestación como Kubernetes, que permite escalar automáticamente los contenedores, balancear carga, realizar despliegues sin interrupciones, reiniciar contenedores fallidos y más.
+                    <br><br>
+                    El manejo de contenedores también promueve el enfoque DevOps, integrando el desarrollo y las operaciones para lograr ciclos de entrega más rápidos y confiables.</p>
+                    <img src="https://evolutioncode.us/wp-content/uploads/2022/12/Contenedores-de-Software.jpg" alt="Microservicios vs Monolito" class="img-fluid rounded shadow mt-4 mb-2 d-block mx-auto">
+                </div>
+              </div>
+          </div>
+
+          <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container text-center">
+              <p class="mb-2">Navegación rápida</p>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                <li class="list-inline-item"><a href="WebAPIs.html" class="text-white text-decoration-none">Web APIs</a></li>
+                <li class="list-inline-item"><a href="Microservicios.html" class="text-white text-decoration-none">Microservicios</a></li>
+                <li class="list-inline-item"><a href="DesarrolloAPI.html" class="text-white text-decoration-none">Desarrollo API</a></li>
+                <li class="list-inline-item"><a href="Contenedores.html" class="text-white text-decoration-none">Contenedores</a></li>
+                <li class="list-inline-item"><a href="Nube.html" class="text-white text-decoration-none">Nube</a></li>
+              </ul>
+              <p class="mb-0">&copy; 2025 Proyecto Integrador | Todos los derechos reservados.</p>
+            </div>
+          </footer>
+          
+     <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parcial 2 | Web APIs</title>
+  <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/container.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="./imgs/logo.png" alt="Logo Web" class="image-fluid" style="height: 40px;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID" aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarID">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="WebAPIs.html">Web APIs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Microservicios.html">Microservicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="DesarrolloAPI.html">Desarrollo API</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contenedores.html">Contenedores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Nube.html">Desarrollo de aplicaciones para la nube</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="container-custom">
+            <div class="card mb-4 shadow rounded-4">
+              <div class="card-body">
+                <h3 class="card-title py-3">Tecnologías de Web APIs</h3>
+                <p class="card-text py-2">Las Web APIs (Interfaces de Programación de Aplicaciones Web) son mecanismos esenciales para que distintos sistemas puedan comunicarse e intercambiar información a través de Internet. Estas interfaces permiten a los desarrolladores acceder a funcionalidades de otros servicios o exponer sus propias funciones de manera estandarizada, facilitando la interoperabilidad entre plataformas heterogéneas.
+                <br> <br>
+                    En una arquitectura moderna, una Web API puede funcionar como intermediaria entre el cliente (por ejemplo, una app móvil o una web) y un servidor, ofreciendo acceso a recursos como bases de datos, servicios de autenticación, procesamiento de datos, entre otros. Las Web APIs utilizan generalmente el protocolo HTTP para enviar y recibir información, siendo los formatos JSON y XML los más utilizados para estructurar los datos.
+                    <br> <br>   
+                    Además, permiten desacoplar el frontend y backend de una aplicación, lo que contribuye a una mayor modularidad, reutilización del código y facilidad en el mantenimiento. También son fundamentales para integrar servicios de terceros como pagos (Stripe, PayPal), geolocalización (Google Maps), autenticación (OAuth, Firebase) y más.</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="ratio ratio-16x9 w-75">
+                          <iframe 
+                            src="https://www.youtube.com/embed/2603LxlQzpk"
+                            title="Video explicativo sobre WEB APIs"
+                            allowfullscreen>
+                          </iframe>
+                        </div>
+                      </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Formulario registro de WEB API -->
+        <div class="container mt-5 mb-5">
+            <div class="card shadow rounded-4">
+              <div class="card-body">
+                <h4 class="card-title mb-4 py-3">Registrar nueva Web API</h4>
+                <form>
+                  <div class="mb-3">
+                    <label for="apiName" class="form-label">Nombre de la API</label>
+                    <input type="text" class="form-control" id="apiName" placeholder="Ej. ClimaGlobalAPI" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="apiDescription" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="apiDescription" rows="3" placeholder="¿Qué hace tu API?" required></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="endpointURL" class="form-label">Endpoint principal</label>
+                    <input type="url" class="form-control" id="endpointURL" placeholder="https://api.ejemplo.com/v1" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="dataFormat" class="form-label">Formato de datos</label>
+                    <select class="form-select" id="dataFormat" required>
+                      <option selected disabled>Selecciona uno</option>
+                      <option>JSON</option>
+                      <option>XML</option>
+                      <option>Ambos</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Métodos soportados</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="getMethod" value="GET">
+                      <label class="form-check-label" for="getMethod">GET</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="postMethod" value="POST">
+                      <label class="form-check-label" for="postMethod">POST</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="putMethod" value="PUT">
+                      <label class="form-check-label" for="putMethod">PUT/PATCH</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="deleteMethod" value="DELETE">
+                      <label class="form-check-label" for="deleteMethod">DELETE</label>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="authRequired" class="form-label">¿Requiere autenticación?</label>
+                    <select class="form-select" id="authRequired" required>
+                      <option selected disabled>Selecciona una opción</option>
+                      <option>Sí</option>
+                      <option>No</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Registrar API</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+
+          <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container text-center">
+              <p class="mb-2">Navegación rápida</p>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                <li class="list-inline-item"><a href="WebAPIs.html" class="text-white text-decoration-none">Web APIs</a></li>
+                <li class="list-inline-item"><a href="Microservicios.html" class="text-white text-decoration-none">Microservicios</a></li>
+                <li class="list-inline-item"><a href="DesarrolloAPI.html" class="text-white text-decoration-none">Desarrollo API</a></li>
+                <li class="list-inline-item"><a href="Contenedores.html" class="text-white text-decoration-none">Contenedores</a></li>
+                <li class="list-inline-item"><a href="Nube.html" class="text-white text-decoration-none">Nube</a></li>
+              </ul>
+              <p class="mb-0">&copy; 2025 Proyecto Integrador | Todos los derechos reservados.</p>
+            </div>
+          </footer>
+          
+     <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
