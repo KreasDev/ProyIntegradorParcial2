@@ -38,6 +38,62 @@
                     En una arquitectura moderna, una Web API puede funcionar como intermediaria entre el cliente (por ejemplo, una app móvil o una web) y un servidor, ofreciendo acceso a recursos como bases de datos, servicios de autenticación, procesamiento de datos, entre otros. Las Web APIs utilizan generalmente el protocolo HTTP para enviar y recibir información, siendo los formatos JSON y XML los más utilizados para estructurar los datos.
                     <br> <br>   
                     Además, permiten desacoplar el frontend y backend de una aplicación, lo que contribuye a una mayor modularidad, reutilización del código y facilidad en el mantenimiento. También son fundamentales para integrar servicios de terceros como pagos (Stripe, PayPal), geolocalización (Google Maps), autenticación (OAuth, Firebase) y más.</p>
+                    <hr class="my-4">
+
+          <div class="accordion" id="webApiTechs">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingHTTP">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHTTP" aria-expanded="true" aria-controls="collapseHTTP">
+                  1.1. HTTP (Hypertext Transfer Protocol)
+                </button>
+              </h2>
+              <div id="collapseHTTP" class="accordion-collapse collapse show" aria-labelledby="headingHTTP" data-bs-parent="#webApiTechs">
+                <div class="accordion-body">
+                  HTTP es el protocolo fundamental utilizado para la comunicación entre clientes y servidores en la web. Las Web APIs emplean HTTP para enviar solicitudes (como GET, POST, PUT y DELETE) y recibir respuestas. Su estructura permite definir cabeceras, cuerpos de mensaje y códigos de estado para indicar el resultado de cada operación (como 200 OK, 404 Not Found o 500 Internal Server Error).
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSOAP">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSOAP" aria-expanded="false" aria-controls="collapseSOAP">
+                  1.2. SOAP (Simple Object Access Protocol)
+                </button>
+              </h2>
+              <div id="collapseSOAP" class="accordion-collapse collapse" aria-labelledby="headingSOAP" data-bs-parent="#webApiTechs">
+                <div class="accordion-body">
+                  SOAP es un protocolo de mensajería que permite el intercambio estructurado de información entre aplicaciones. Utiliza XML para definir los mensajes y suele operar sobre HTTP o SMTP. Aunque es más complejo y pesado que REST, es muy usado en entornos empresariales por su robustez, soporte de transacciones y estrictos estándares de seguridad.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingREST">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseREST" aria-expanded="false" aria-controls="collapseREST">
+                  1.3. REST (Representational State Transfer)
+                </button>
+              </h2>
+              <div id="collapseREST" class="accordion-collapse collapse" aria-labelledby="headingREST" data-bs-parent="#webApiTechs">
+                <div class="accordion-body">
+                  REST es un estilo arquitectónico que define un conjunto de principios para crear servicios web ligeros. Las APIs RESTful utilizan métodos HTTP para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre recursos representados en formatos como JSON o XML. Son fáciles de implementar y escalar, por lo que son ampliamente usadas en aplicaciones modernas.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingJWT">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJWT" aria-expanded="false" aria-controls="collapseJWT">
+                  1.4. JWT (JSON Web Token)
+                </button>
+              </h2>
+              <div id="collapseJWT" class="accordion-collapse collapse" aria-labelledby="headingJWT" data-bs-parent="#webApiTechs">
+                <div class="accordion-body">
+                  JWT es un estándar abierto (RFC 7519) que se utiliza para compartir información de forma segura entre partes como un objeto JSON. Comúnmente se emplea en APIs para autenticar usuarios y autorizar el acceso a recursos. Un JWT contiene tres partes: header, payload y signature, lo que permite verificar su integridad y autenticidad sin consultar una base de datos constantemente.
+                </div>
+              </div>
+            </div>
+          </div>
+
                     <div class="d-flex justify-content-center">
                         <div class="ratio ratio-16x9 w-75">
                           <iframe 

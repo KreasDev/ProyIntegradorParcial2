@@ -61,7 +61,78 @@
                   </div>
               </div>
           </div>
-
+          <div class="container-custom">
+            <div class="card mb-4 shadow rounded-4">
+              <div class="card-body">
+                <h4 class="card-title py-3">3.1. Recomendaciones</h4>
+                <p class="card-text">
+                  Para garantizar un desarrollo eficiente y seguro de una Web API, es fundamental seguir una serie de buenas prácticas técnicas y organizativas:
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <strong>Diseño consistente:</strong> Utiliza un esquema uniforme de URLs y recursos. Aplica principios REST como pluralización (ej. <code>/usuarios</code>).
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Uso correcto de los métodos HTTP:</strong> Asocia cada operación al método adecuado (GET para obtener, POST para crear, PUT/PATCH para actualizar, DELETE para eliminar).
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Autenticación y autorización:</strong> Protege tu API con JWT, OAuth 2.0 u otros mecanismos seguros.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Manejo de errores:</strong> Devuelve respuestas claras con códigos de estado HTTP correctos (400, 404, 500, etc.).
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Versionamiento:</strong> Mantén versiones de tu API para evitar romper integraciones (por ejemplo, <code>/api/v1</code>).
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Documentación clara:</strong> Usa herramientas como Swagger (OpenAPI) o Postman para documentar endpoints y facilitar pruebas.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Validación de datos:</strong> Asegúrate de validar tanto en el cliente como en el servidor para evitar errores y ataques.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Monitoreo y logging:</strong> Implementa seguimiento de errores y estadísticas para detectar problemas en tiempo real.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          
+            <div class="card mb-4 shadow rounded-4">
+              <div class="card-body">
+                <h4 class="card-title py-3">3.2. Proceso</h4>
+                <p class="card-text">
+                  El desarrollo de una Web API suele seguir un flujo organizado que facilita su mantenimiento y escalabilidad:
+                </p>
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item">
+                    <strong>Análisis de requerimientos:</strong> Define qué funcionalidades necesita ofrecer la API y cómo se integrará con otros sistemas.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Diseño de endpoints:</strong> Establece los recursos, rutas y operaciones necesarias. Ejemplo: <code>GET /productos</code>, <code>POST /usuarios</code>.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Elección del stack tecnológico:</strong> Escoge lenguaje, framework y base de datos. Ejemplos: Node.js con Express, Python con Flask.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Implementación:</strong> Programa los controladores, modelos, middleware de seguridad, validaciones y lógica de negocio.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Pruebas:</strong> Verifica que todos los endpoints respondan correctamente (unitarias, integrales y automatizadas).
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Documentación:</strong> Crea una guía para los consumidores de la API, incluyendo ejemplos de uso.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Despliegue:</strong> Sube tu API a un servidor o nube (como Heroku, AWS, Vercel) y configura HTTPS.
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Mantenimiento:</strong> Agrega mejoras, corrige errores y gestiona versiones nuevas sin afectar a clientes existentes.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          
           <footer class="bg-dark text-white py-4 mt-5">
             <div class="container text-center">
               <p class="mb-2">Navegación rápida</p>
